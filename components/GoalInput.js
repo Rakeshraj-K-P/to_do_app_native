@@ -13,13 +13,16 @@ export default function GoalInput(props) {
 
   function goalInputHandler(enteredText) {
     setEnteredGoalText(enteredText);
-    // console.log(enteredText);
+  
   }
 
   function addGoalHandler() {
     props.onAddGoal(enteredGoalText);
     setEnteredGoalText('');
   }
+
+ 
+  
   return (
     <Modal visible={props.visible} animationType="slide">
       <View style={styles.inputContainer}>
